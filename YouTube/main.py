@@ -1,12 +1,17 @@
+# -*- coding: utf-8 -*-
+
 import youtube_dl
 import codecs
+import os
 
+pwd = os.getcwd()
 ydl_opts = {
         'proxy':'socks5://127.0.0.1/',
         'ignoreerrors':True,
+        'outtmpl': pwd+'/video/%(title)s-%(id)s.%(ext)s'
     }
 
-file =  codecs.open('video.txt','a','utf-8')
+file =  codecs.open(pwd+'/video.txt','a','utf-8')
 
 # example: https://www.youtube.com/user/BostonDynamics/videos
 # 返回各个视频的初始下载链接
@@ -31,7 +36,12 @@ if __name__ == '__main__':
 
     url = 'https://www.youtube.com/user/BostonDynamics/videos'
     for link in getfirstLink(url):
-        downloadVideo(link)
+        try:
+            downloadVideo(link)
+        except Exception as e:
+            print(link)
+            print(e)
+            continue
     file.close()
 
 
