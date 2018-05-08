@@ -13,7 +13,7 @@ Python 入门学习，一些工具，持续更新！
 - [视频添加片头](https://github.com/suiyia/movie_edit)
 
 
-## 科学上网
+## 其它
 
  - [new-pac](https://github.com/Alvin9999/new-pac/wiki)
 
