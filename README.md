@@ -22,3 +22,4 @@ Python 入门学习，一些工具，持续更新！
 
  - [「科学上网」方法总结](https://github.com/suiyia/PythonLearn/blob/master/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.md)
 
+ - **微信公众号 : 菜鸟日常**，欢迎关注
